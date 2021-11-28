@@ -1,1 +1,7 @@
 
+#ifndef ESERITAZIONE_VALUTATA_6_1_LIB_H
+#define ESERITAZIONE_VALUTATA_6_1_LIB_H
+
+bool l_o(char &a);
+
+#endif //ESERITAZIONE_VALUTATA_6_1_LIB_H

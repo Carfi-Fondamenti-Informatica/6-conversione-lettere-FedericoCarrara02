@@ -1,10 +1,12 @@
 #include "lib.h"
+#include <string>
+using namespace std;
 
-bool l_o(char &c) {
+string l_o(char &c) {
     //DICHIARAZIONE VARIABILI
-    bool b = false;
+    string b = "False";
     if ( (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) {
-        b = true;
+        b = "Vero";
         if (c <= 'Z') { //Lettere maiuscole
             c = c - 'A' + 'a'; //32;
         }
@@ -14,3 +16,4 @@ bool l_o(char &c) {
     }
     return b;
 }
+

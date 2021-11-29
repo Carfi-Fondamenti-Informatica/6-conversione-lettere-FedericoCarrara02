@@ -1,9 +1,11 @@
 #include <iostream>
 #include "lib.h"
+#include <string>
 using namespace std;
 
 int main() {
     //DICHIARAZIONE VARIABILI
+    //B è IL VERO O FALSO RICHIESTO, D IL CARATTERE INSERITO TRASFORMATO, I L'INPUT
 
     char i = '0';
 
@@ -11,12 +13,8 @@ int main() {
 
     cin >> i;
 
-    //CHIHAMO FUNZIONE DA LIBRERIA E PASSO IL VALORE IN INPUT
-
-  
-
-    bool conversione = l_o(i);
-    if (conversione) {
+    string conversione = l_o(i);
+    if (conversione.compare("Vero") == 0) {
         cout << i << endl;
     }
     else {
